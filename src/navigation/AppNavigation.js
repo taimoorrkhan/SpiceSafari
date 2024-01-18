@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import WelcomeScreen from '../screens/WelcomeScreen';
 import HomeScreen from '../screens/HomeScreen';
-
+import RecipeDetailScreen from '../screens/RecipeDetailScreen';
 const Stack = createNativeStackNavigator();
 
 function AppNavigation() {
@@ -12,7 +12,7 @@ function AppNavigation() {
       <Stack.Navigator initialRouteName='Welcome' screenOptions={{ headerShown: false }}>
         <Stack.Screen name="HomeScreen" component={HomeScreen} />
         <Stack.Screen name="Welcome" component={WelcomeScreen} />
-{/*         <Stack.Screen name="RecipeDetail" component={RecipeDetailScreen} /> */}
+        <Stack.Screen name="RecipeDetail" component={RecipeDetailScreen} /> 
       </Stack.Navigator>
     </NavigationContainer>
   );
